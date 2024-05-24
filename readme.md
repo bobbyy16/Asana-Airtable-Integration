@@ -1,4 +1,4 @@
-## Webhooks Processor: Automate Asana Task Management with Airtable
+## Automate Asana Task Management with Airtable
 
 This Node.js application bridges the gap between Asana and Airtable, enabling seamless synchronization of task events. It listens for incoming webhooks from Asana, processes task updates (adding, deleting, or modifying), retrieves detailed task information using Asana's API, and keeps your Airtable base in sync.
 [Demo Video](https://www.loom.com/share/44477fe546044e56b435a6ad8f1dfb68?sid=ebf8b3e2-e861-4c91-a2af-117a52e9a0ce)
@@ -55,8 +55,6 @@ npm start
 
 This will initiate the server, listening for incoming Asana webhooks. Ensure your server is publicly accessible for Asana to deliver webhooks.
 
-# Webhooks Processor
-
 ## Functionality:
 
 **receiveWebhooks Function:** This serves as the core event handler for incoming Asana webhooks. It performs the following crucial tasks:
@@ -70,10 +68,3 @@ This will initiate the server, listening for incoming Asana webhooks. Ensure you
 **Airtable Synchronization:** Updates your Airtable base with the retrieved task details, ensuring consistency between Asana and Airtable.
 
 **Locking Mechanism:** Employs an in-memory set (processingTasks) to prevent redundant processing of concurrently arriving task updates.
-
-## Additional Considerations:
-
-- **Error Handling:** Implement robust error handling for unexpected issues and logging for debugging.
-- **Security:** Securely store Asana PAT and Airtable API key using environment variables.
-- **Logging:** Incorporate logging for monitoring and troubleshooting.
-- **Scalability:** Consider scalability options for handling high volumes of task events, like a distributed queueing system.
