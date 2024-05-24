@@ -38,12 +38,12 @@ Create a .env file in the project's root directory and populate it with the foll
 ASANA_PAT=your_asana_personal_access_token
 AIRTABLE_API_KEY=your_airtable_api_key
 AIRTABLE_BASE_ID=your_airtable_base_id
-AIRTABLE_TABLE_NAME=your_airtable_table_name
+AIRTABLE_TABLE_ID=your_airtable_table_id
 ```
 
 Replace your_asana_personal_access_token with your actual Asana PAT.
 
-Obtain your Airtable API key, base ID, and table name from your Airtable account settings.
+Obtain your Airtable API key, base ID, and table id from your Airtable account settings.
 
 ## Running the Application:
 
